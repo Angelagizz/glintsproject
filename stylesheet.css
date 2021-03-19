@@ -1,0 +1,382 @@
+body {
+  margin: auto;
+}
+header { 
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #B0C4DE;
+  padding: 0;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: #778899;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #778899;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-right a {
+  padding-right: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.introduction {
+  text-align: center;
+  color: white;
+  height: 65vh;
+  border: 1px solid;
+  background-image: url(background-animation.jpg);
+  background-size: cover;
+  
+}
+
+.introduction h2 {
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 0;
+  animation: typingAnim 2s;
+}
+
+@keyframes typingAnim {
+  from {width: 0}
+  to {width: 100%}
+}
+
+.introduction p {
+  margin-top: 5px;
+}
+
+.image {
+  margin-top: 70px;
+}
+
+.image img {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 30px;}
+}
+
+.container {
+  width: 100%;
+  color: black;
+  margin-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  margin-bottom: -150px;
+}
+
+.title1 {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.title2 {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.title3 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.container h3 {
+  color: #708090;
+  font-size: 25px;
+  text-align: center;
+}
+.garis {
+  
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contact {
+  color: black;
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  background-image: url(background-animation.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact .content h3 {
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  margin-top: 40px;
+  
+}
+
+.contact .content p {
+  font-weight: 300;
+}
+
+.contactPerson {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contactPerson .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 20px;}
+
+}
+
+.contactPerson .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactPerson .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  margin-top: -15px;
+
+
+}
+
+.contactPerson .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contactPerson .contactInfo .box .text h4 {
+  font-weight: 700;
+  color: #B0C4DE;
+  margin: -10px 0;
+}
+
+.contactForm {
+  width: 30%;
+  padding: 40px;
+  background: #fff;
+  flex-direction: column;
+  float: left;
+  margin-top: 40px;
+  margin-bottom: -150px;
+
+}
+.contactForm h4 {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input, textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+footer p {
+  text-align: center;
+  color: black;
+  margin-bottom: 40px;
+}
+
+#darkmode {
+  background: black;
+  color: white;
+}
+#darkmode .txt-contents {
+  color: white;
+}
+#darkmode footer p {
+  color: white;
+}
+#darkmode .topnav {
+  background-color: rgba(47, 79, 79, 0.5);
+}
+#darkmode .topnav a {
+  color: white;
+}
+#darkmode .skill ul {
+  color: white;
+}
+
+.darkMode {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+.darkMode h4 {
+  text-align: center;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+ 
+ .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+ }
+ .title1 {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+  }
+
+  .title2 {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .title3 {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-bottom: -200px;
+  }
+  .container h3 {
+    color: #708090;
+    font-size: 25px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+  
+
+  }
+  .darkMode {
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 90px;
+    cursor: pointer;
+  }
+  .contactForm {
+    width: 30%;
+    padding: 40px;
+    background: #fff;
+    flex-direction: column;
+    float: left;
+    margin-bottom: -400px;
+
+  }
+  
+}
